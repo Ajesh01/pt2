@@ -3,4 +3,4 @@ services:
   sample_backend:
     build: .
     ports:
-     - "5200:5200"
+     - "80:80"
