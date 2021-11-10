@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask, render_template
 
 
 
@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/') 
 def hello():
-    return 'Hello! this is my PT2 project'
+    return render_template('index.html')
 
 
 
