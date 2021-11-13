@@ -52,7 +52,7 @@ def get_last_article_id():
 def home():
 
     llist = []
-    cursor = coll_1.find()
+    cursor = coll_1.find().sort("article_id", -1)
     for article in cursor:
         llist.append(article)
 
